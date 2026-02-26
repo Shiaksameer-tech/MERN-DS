@@ -1,0 +1,23 @@
+span{
+    color: red;
+    font-size: large;
+}
+.subhead{
+    font-family:  sans-serif;
+}
+#para{
+    background-color: aqua;
+    color: blue;
+}
+span,.subhead,h1,h2{
+    background-color: cyan;
+}
+*{
+    background: lightgray;
+}
+div p{
+    color: maroon;
+}
+div > p{
+    color: olive;
+}
