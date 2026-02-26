@@ -21,3 +21,12 @@ div p{
 div > p{
     color: olive;
 }
+input[type="text"]{
+    color: lightcoral;
+}
+h1 + p{
+    color: midnightblue;
+}
+h1 ~ p{
+    color: firebrick;
+}
