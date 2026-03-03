@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    background-color: chocolate;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+.list{
+    list-style: none;
+    display: flex;
+    background-color: white;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.link{
+    text-decoration: none;
+    background-color: darksalmon;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+}
+.list:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
