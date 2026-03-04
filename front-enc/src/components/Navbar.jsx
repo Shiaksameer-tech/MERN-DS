@@ -8,18 +8,24 @@ const Navbar = () => {
         <nav >
             <ul className="navbar">
                 <li className="list">
-                    <Link to="/">Home</Link>
+                    <Link to="/" className="link">Home</Link>
 
                 </li>
                 <li className="list">
-                    <Link to="/about">About</Link>
+                    <Link to="/about" className="link">About</Link>
                 </li>
                 <li className="list">
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" className="link">Contact</Link>
                 </li>
                 <li className="list">
-                    <Link to="/service">Service</Link>
+                    <Link to="/service" className="link">Service</Link>
                     
+                </li>
+                 <li className="list">
+                    <Link to="/hooks" className="link">Hooks</Link>
+                </li>
+                <li className="list">
+                    <Link to="/login" className="link">Login</Link>
                 </li>
             </ul>
         </nav>

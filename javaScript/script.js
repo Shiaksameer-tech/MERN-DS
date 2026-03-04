@@ -1,14 +1,14 @@
-// console.log("Hello World");
-// //varable can be declared and assigned value later
-// var a;
-// a = 10;
-// //varable can be declared and assigned value at the same time
-// let b=20;
-// //const variable must be assigned value at the time of declaration and cannot be reassigned later
-// const c=30;
-// console.log(a);
-// console.log(b);
-// console.log(c);
+console.log("Hello World");
+//varable can be declared and assigned value later
+var a;
+a = 10;
+//varable can be declared and assigned value at the same time
+let b=20;
+//const variable must be assigned value at the time of declaration and cannot be reassigned later
+const c=30;
+console.log(a);
+console.log(b);
+console.log(c);
 
 var num=10;
 var str = "Thilak";//`` '' " are used to declare string
