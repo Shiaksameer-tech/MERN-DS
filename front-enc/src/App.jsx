@@ -12,6 +12,8 @@ import Form from './hooks/Form'
 import Effect from './hooks/Effect'
 import EffectWithApi from './hooks/EffectWithApi'
 import Login from './Auth/Login'
+import { Ref } from './hooks/Ref'
+import Recuder from './hooks/Recuder'
 const App = () => {
   const element = <div>Hello Sammm!</div>
   return (
@@ -30,7 +32,8 @@ const App = () => {
           <Route path="form" element={<Form/>}/>
           <Route path="effects" element={<Effect/>}/>
           <Route path="useEffectApi" element={<EffectWithApi/>}/>
-          
+          <Route path="useRef" element={<Ref/>}></Route>
+          <Route path="useRecuder" element={<Recuder/>}></Route>
       </Route>
 
     </Routes>
