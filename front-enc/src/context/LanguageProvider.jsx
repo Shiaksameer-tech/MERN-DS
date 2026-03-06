@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
-import LanguageContext  from '../Context/LanguageContext';
+import LanguageContext from './LanguageContext'
 
-const LanguageProvider = ({childern}) => {
-    const [language,setLanguage] = useState(en);
-    const changeLanguage = (lang) =>
-        setLanguage(lang);
+const LanguageProvider = ({children}) => {
+  const [language,setLanguage] = useState('en');
+  const changeLanguage = (lang)=>{
+    setLanguage(lang);
+  }
   return (
-    <LanguageContext.provider value={{language,changeLanguage}}>
-        {childern}
-    </LanguageContext.provider>
-    
-   
+    <LanguageContext.Provider value={{language,changeLanguage}}>
+      {children}
+    </LanguageContext.Provider>
   )
 }
 

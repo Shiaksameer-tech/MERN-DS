@@ -2,17 +2,28 @@ import React,{useContext} from 'react'
 import {useNavigate} from 'react-router-dom';
 import ThemeContext from '../context/ThemeContext';
 import AuthContext from '../context/AuthContext';
-import languageContext from '../Context/LanguageContext'
+import LanguageContext from '../context/LanguageContext';
 
 const Home = () => {
   const navigate = useNavigate();
   const {theme,changeTheme} = useContext(ThemeContext);
   const user= useContext(AuthContext); 
-  
+  const {language,changeLanguage} = useContext(LanguageContext);
   const handleClick=() =>{
     navigate("/about");
   }
-  const text = message[language];
+  const translate={
+    en:{
+      greeting:"hello"
+    },
+    te:{
+      greeting:"నమస్కారం"
+    },
+    ta:{
+      greeting:"தன்பால்"
+    }
+  }
+  const text = translate[language];
 
   return (
     <div>

@@ -1,7 +1,6 @@
 import React, { use } from 'react'
 import { Link,Outlet } from 'react-router-dom'
 import './Hooks.css'
-import Effect from './Effect'
 
 const Hooks = () => {
   
@@ -16,6 +15,10 @@ const Hooks = () => {
             <li><Link to="useEffectApi" className='nestedLink'>EffectWithApi</Link></li>
             <li><Link to="useRef" className='nestedLink'>useRef</Link></li>
             <li><Link to="useRecuder" className='nestedLink'>Recuder</Link></li>
+            <li><Link to="useMemo" className='nestedLink'>Memo</Link></li>
+            <li><Link to="useCallBack" className='nestedLink'>Memo</Link></li>
+          
+          
             
         </ul>
         <Outlet/>
